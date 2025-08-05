@@ -4,14 +4,13 @@ import os
 
 # Zadej názvy schémat, která chceš prohledat
 schema1 = "K2_MIGUSER1"
-schema2 = "K2_MIGUSER3"
 
 try:
     connection = get_db_connection()
     cursor = connection.cursor()
 
     vystupy = {}
-    for schema in [schema1, schema2]:
+    for schema in [schema1]:
         cursor.execute("""
             SELECT t.table_name, c.comments
             FROM all_tables t

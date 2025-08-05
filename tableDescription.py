@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # Zadej názvy schémat
-schemas = ["K2_MIGUSER1", "K2_MIGUSER3"]
+schemas = ["K2_MIGUSER1"]
 
 try:
     connection = get_db_connection()
